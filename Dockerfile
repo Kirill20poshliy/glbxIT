@@ -16,5 +16,3 @@ FROM nginx:mainline
 COPY --from=build /usr/app/dist /usr/share/nginx/html
 COPY --from=build /usr/app/nginx/nginx.conf /etc/nginx/nginx.conf
 
-# VOLUME ./nginx.conf:/etc/nginx
-
