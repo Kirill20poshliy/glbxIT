@@ -6,7 +6,7 @@
 
 Запуск prod-билда*: 
   - docker build -t frontend .
-  - docker run -d --name prod frontend
+  - docker run -d -p 80:80 --name prod frontend
 
 Удалить контейнер: 
   - docker stop prod
